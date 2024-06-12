@@ -1,0 +1,50 @@
+{
+ "add_total_row": 1,
+ "columns": [
+  {
+   "fieldname": "segment",
+   "fieldtype": "Data",
+   "label": "SEGMENT",
+   "width": 0
+  },
+  {
+   "fieldname": "NET_BROKERAGE",
+   "fieldtype": "Currency",
+   "label": "NET BROKERAGE",
+   "width": 0
+  }
+ ],
+ "creation": "2024-01-09 22:34:42.460726",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "B&K Letter Head",
+ "modified": "2024-02-09 12:35:33.268795",
+ "modified_by": "Administrator",
+ "module": "Mis",
+ "name": "Segmentwise Revenue Summary",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT segment, sum(net_brokerage_excl_stt_stax_stampduty_trxn_charges) AS NET_BROKERAGE FROM  `tabiBeats Data To Import` GROUP BY segment ;",
+ "ref_doctype": "iBeats Data To Import",
+ "report_name": "Segmentwise Revenue Summary",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Talend Process"
+  },
+  {
+   "role": "MIS Creator"
+  },
+  {
+   "role": "MIS Consumer"
+  }
+ ]
+}

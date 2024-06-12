@@ -1,0 +1,37 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2024-01-09 22:37:22.340765",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "B&K Letter Head",
+ "modified": "2024-01-09 22:38:10.852323",
+ "modified_by": "Administrator",
+ "module": "Mis",
+ "name": "MIS Revenue MTD Raw",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT trx_date, family_code, account_name, nse_symbol, scrip_name, buy_sell, bought_qty, sold_qty, mkt_turnover_amt, gross_brokerage, brokerage_percentage , brokerage_percentage_as_per_slab , default_brokerage_percentage , stt_amt, stt_inclusive_amt, trxn_charges, trxn_charges_excl, stamp_duty, stamp_duty_excl, gst_incl_brk_amt, sgst_amt, cgst_amt, igst_amt, ugst_amt, net_brokerage_mgmt, net_brokerage_excl_stt_stax_stampduty_trxn_charges, exchange, group1, buy_market_rate, sell_market_rate,  segment , pan_no , mbrok_code,bkm_code, product_code, option_type FROM `tabiBeats Data MTD`;",
+ "ref_doctype": "iBeats Data MTD",
+ "report_name": "MIS Revenue MTD Raw",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Talend Process"
+  },
+  {
+   "role": "MIS Creator"
+  },
+  {
+   "role": "MIS Consumer"
+  }
+ ]
+}

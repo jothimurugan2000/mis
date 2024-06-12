@@ -1,0 +1,361 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-13 10:37:30.153928",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "trx_date",
+  "account_name",
+  "buy_sell",
+  "gross_brokerage",
+  "stt_amt",
+  "stamp_duty",
+  "cgst_amt",
+  "net_brokerage_excl_stt_stax_stampduty_trxn_charges",
+  "buy_market_rate",
+  "bkm_code",
+  "rqd_margin_charge_by_exchange",
+  "contract_no",
+  "deleted",
+  "deleted_time",
+  "column_break_faahf",
+  "family_code",
+  "sub_account_code",
+  "bought_qty",
+  "brokerage_percentage",
+  "stt_inclusive_amt",
+  "stamp_duty_excl",
+  "igst_amt",
+  "exchange",
+  "sell_market_rate",
+  "product_code",
+  "interest",
+  "trx_key",
+  "column_break_lx94t",
+  "account_code",
+  "nse_symbol",
+  "sold_qty",
+  "brokerage_percentage_as_per_slab",
+  "trxn_charges",
+  "gst_incl_brk_amt",
+  "ugst_amt",
+  "net_brokerage_mgmt",
+  "segment",
+  "option_type",
+  "scripcode",
+  "column_break_uekai",
+  "cp_code",
+  "scrip_name",
+  "mkt_turnover_amt",
+  "default_brokerage_percentage",
+  "trxn_charges_excl",
+  "sgst_amt",
+  "group1",
+  "pan_no",
+  "mbrok_code",
+  "exchange_appl_mrgn_rpt_percentage",
+  "astrkey"
+ ],
+ "fields": [
+  {
+   "fieldname": "trx_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Trx Date"
+  },
+  {
+   "fieldname": "family_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Family Code",
+   "search_index": 1
+  },
+  {
+   "fieldname": "account_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Account Code"
+  },
+  {
+   "fieldname": "cp_code",
+   "fieldtype": "Data",
+   "label": "CP Code"
+  },
+  {
+   "fieldname": "account_name",
+   "fieldtype": "Data",
+   "label": "Account Name"
+  },
+  {
+   "fieldname": "sub_account_code",
+   "fieldtype": "Data",
+   "label": "Sub Account Code"
+  },
+  {
+   "fieldname": "nse_symbol",
+   "fieldtype": "Data",
+   "label": "NSE Symbol",
+   "search_index": 1
+  },
+  {
+   "fieldname": "scrip_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Scrip Name"
+  },
+  {
+   "fieldname": "buy_sell",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Buy Sell",
+   "search_index": 1
+  },
+  {
+   "fieldname": "bought_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Bought Qty",
+   "precision": "4"
+  },
+  {
+   "fieldname": "sold_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Sold Qty"
+  },
+  {
+   "fieldname": "mkt_turnover_amt",
+   "fieldtype": "Currency",
+   "label": "Mkt Turnover Amt"
+  },
+  {
+   "fieldname": "gross_brokerage",
+   "fieldtype": "Currency",
+   "label": "Gross Brokerage"
+  },
+  {
+   "fieldname": "brokerage_percentage",
+   "fieldtype": "Float",
+   "label": "Brokerage Percentage",
+   "precision": "4"
+  },
+  {
+   "fieldname": "brokerage_percentage_as_per_slab",
+   "fieldtype": "Float",
+   "label": "Brokerage Percentage as Per Slab"
+  },
+  {
+   "fieldname": "default_brokerage_percentage",
+   "fieldtype": "Float",
+   "label": "Default Brokerage Percentage",
+   "precision": "4"
+  },
+  {
+   "fieldname": "stt_amt",
+   "fieldtype": "Currency",
+   "label": "STT Amt"
+  },
+  {
+   "fieldname": "stt_inclusive_amt",
+   "fieldtype": "Currency",
+   "label": "STT Inclusive Amt"
+  },
+  {
+   "fieldname": "trxn_charges",
+   "fieldtype": "Currency",
+   "label": "Trxn Charges"
+  },
+  {
+   "fieldname": "trxn_charges_excl",
+   "fieldtype": "Currency",
+   "label": "Trxn Charges Excl"
+  },
+  {
+   "fieldname": "stamp_duty",
+   "fieldtype": "Currency",
+   "label": "Stamp Duty"
+  },
+  {
+   "fieldname": "stamp_duty_excl",
+   "fieldtype": "Currency",
+   "label": "Stamp Duty Excl"
+  },
+  {
+   "fieldname": "gst_incl_brk_amt",
+   "fieldtype": "Currency",
+   "label": "GST Incl Brk Amt"
+  },
+  {
+   "fieldname": "sgst_amt",
+   "fieldtype": "Currency",
+   "label": "SGST Amt"
+  },
+  {
+   "fieldname": "cgst_amt",
+   "fieldtype": "Currency",
+   "label": "CGST Amt"
+  },
+  {
+   "fieldname": "igst_amt",
+   "fieldtype": "Currency",
+   "label": "IGST Amt"
+  },
+  {
+   "fieldname": "ugst_amt",
+   "fieldtype": "Currency",
+   "label": "UGST Amt"
+  },
+  {
+   "fieldname": "net_brokerage_mgmt",
+   "fieldtype": "Currency",
+   "label": "Net Brokerage MGMT"
+  },
+  {
+   "fieldname": "net_brokerage_excl_stt_stax_stampduty_trxn_charges",
+   "fieldtype": "Currency",
+   "label": "Net Brokerage Excl STT Stax Stampduty Trxn Charges"
+  },
+  {
+   "fieldname": "exchange",
+   "fieldtype": "Data",
+   "label": "Exchange"
+  },
+  {
+   "fieldname": "group1",
+   "fieldtype": "Data",
+   "label": "Group1"
+  },
+  {
+   "fieldname": "buy_market_rate",
+   "fieldtype": "Float",
+   "label": "Buy Market Rate",
+   "precision": "6"
+  },
+  {
+   "fieldname": "sell_market_rate",
+   "fieldtype": "Float",
+   "label": "Sell Market Rate",
+   "precision": "6"
+  },
+  {
+   "fieldname": "segment",
+   "fieldtype": "Data",
+   "label": "Segment",
+   "search_index": 1
+  },
+  {
+   "fieldname": "pan_no",
+   "fieldtype": "Data",
+   "label": "PAN No"
+  },
+  {
+   "fieldname": "mbrok_code",
+   "fieldtype": "Data",
+   "label": "MBrok Code"
+  },
+  {
+   "fieldname": "bkm_code",
+   "fieldtype": "Data",
+   "label": "Bkm Code"
+  },
+  {
+   "fieldname": "column_break_faahf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_lx94t",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_uekai",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "product_code",
+   "fieldtype": "Data",
+   "label": "Product Code"
+  },
+  {
+   "fieldname": "option_type",
+   "fieldtype": "Data",
+   "label": "Option Type"
+  },
+  {
+   "fieldname": "rqd_margin_charge_by_exchange",
+   "fieldtype": "Currency",
+   "label": "Required Margin charge by exchange"
+  },
+  {
+   "fieldname": "contract_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Contract No",
+   "search_index": 1
+  },
+  {
+   "fieldname": "interest",
+   "fieldtype": "Currency",
+   "label": "Interest"
+  },
+  {
+   "fieldname": "scripcode",
+   "fieldtype": "Data",
+   "label": "ScripCode"
+  },
+  {
+   "fieldname": "exchange_appl_mrgn_rpt_percentage",
+   "fieldtype": "Float",
+   "label": "Exchange applicable margin report %",
+   "precision": "4"
+  },
+  {
+   "fieldname": "astrkey",
+   "fieldtype": "Int",
+   "label": "AsTrkey"
+  },
+  {
+   "default": "0",
+   "fieldname": "deleted",
+   "fieldtype": "Check",
+   "label": "deleted"
+  },
+  {
+   "depends_on": "eval:doc.deleted==1",
+   "fieldname": "deleted_time",
+   "fieldtype": "Datetime",
+   "label": "Deleted Time"
+  },
+  {
+   "fieldname": "trx_key",
+   "fieldtype": "Data",
+   "label": "Trx Key"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-27 14:26:46.772637",
+ "modified_by": "Administrator",
+ "module": "Mis",
+ "name": "Revenue Raw",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "trx_date",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

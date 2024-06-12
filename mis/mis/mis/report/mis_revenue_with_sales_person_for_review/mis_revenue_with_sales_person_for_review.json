@@ -1,0 +1,37 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2024-01-03 17:01:04.300277",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "B&K Letter Head",
+ "modified": "2024-01-03 17:01:04.300277",
+ "modified_by": "Administrator",
+ "module": "Mis",
+ "name": "MIS Revenue With Sales Person for Review",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT a.trx_date, MAX(b.sales_person) sales_person, a.family_code, MAX(a.account_name) account_name, a.nse_symbol, MAX(a.scrip_name) scrip_name, a.buy_sell, SUM(a.bought_qty) bought_qty, SUM(a.sold_qty) sold_qty, MAX(a.mkt_turnover_amt) mkt_turnover_amt, SUM(a.gross_brokerage) gross_brokerage, AVG(a.brokerage_percentage) brokerage_percentage, SUM(a.brokerage_percentage_as_per_slab) brokerage_percentage_as_per_slab, AVG(a.default_brokerage_percentage) default_brokerage_percentage, SUM(a.stt_amt), SUM(a.stt_inclusive_amt), SUM(a.trxn_charges), SUM(a.trxn_charges_excl), SUM(a.stamp_duty) stamp_duty, SUM(a.stamp_duty_excl) stamp_duty_excl, SUM(a.gst_incl_brk_amt) gst_incl_brk_amt, SUM(a.sgst_amt) sgst_amt, SUM(a.cgst_amt) cgst_amt, SUM(a.igst_amt) igst_amt, SUM(a.ugst_amt) ugst_amt, SUM(a.net_brokerage_mgmt) net_brokerage_mgmt, SUM(a.net_brokerage_excl_stt_stax_stampduty_trxn_charges) net_brokerage_excl_stt_stax_stampduty_trxn_charges, MAX(a.exchange) exchange, MAX(a.group1) group1, AVG(a.buy_market_rate) buy_market_rate, AVG(a.sell_market_rate) sell_market_rate,  segment, MAX(a.pan_no) pan_no, MAX(a.mbrok_code) mbrok_code, MAX(a.bkm_code) bkm_code, MAX(a.product_code) product_code, MAX(a.option_type) option_type\r\nFROM `tabiBeats Data To Import` a LEFT JOIN `tabClient Sales Person Mapping` b \r\nON a.family_code = b.client_code \r\nGROUP BY a.trx_date, a.family_code, a.nse_symbol, a.segment, a.buy_sell;",
+ "ref_doctype": "iBeats Data To Import",
+ "report_name": "MIS Revenue With Sales Person for Review",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Talend Process"
+  },
+  {
+   "role": "MIS Creator"
+  },
+  {
+   "role": "MIS Consumer"
+  }
+ ]
+}

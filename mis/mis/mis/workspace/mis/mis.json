@@ -1,0 +1,114 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"xFeoJCwY4M\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">MIS</span>\",\"col\":12}},{\"id\":\"YgYqZqDGZ0\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Last Run MTD\",\"col\":9}},{\"id\":\"QtE_EoEhRm\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"iBeats Data MTD\",\"col\":3}},{\"id\":\"zGG3pYxXBy\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Last Run\",\"col\":9}},{\"id\":\"sNYBhw18lj\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"iBeats Data To Import\",\"col\":3}},{\"id\":\"Vm4vA_lxSC\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Revenue\",\"col\":4}},{\"id\":\"Is3jHiGGar\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Client Sales Person Mapping\",\"col\":4}},{\"id\":\"fAWqPKilye\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Clients with no Sales Person Mapping\",\"col\":4}},{\"id\":\"qUYmr_5b5w\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"2h359WiEWy\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Revenue MIS For Review\",\"col\":3}},{\"id\":\"5SsGXb72gx\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Segmentwise Revenue Summary\",\"col\":3}},{\"id\":\"NsGPXFDX5_\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Revenue Raw For Review\",\"col\":3}},{\"id\":\"4Iiks-9cyV\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"MIS Revenue MTD With Sales Person\",\"col\":3}},{\"id\":\"9C4bMYg_6h\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"RujedeTATz\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Revenue Summary\",\"col\":3}}]",
+ "creation": "2023-12-08 11:03:17.110841",
+ "custom_blocks": [
+  {
+   "custom_block_name": "Last Run MTD",
+   "label": "Last Run MTD"
+  },
+  {
+   "custom_block_name": "Last Run",
+   "label": "Last Run"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "chart",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "MIS",
+ "links": [],
+ "modified": "2024-06-07 11:55:46.844750",
+ "modified_by": "Administrator",
+ "module": "Mis",
+ "name": "MIS",
+ "number_cards": [
+  {
+   "label": "Clients with no Sales Person Mapping",
+   "number_card_name": "Clients with no Sales Person Mapping"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 4.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Revenue",
+   "link_to": "Revenue",
+   "stats_filter": "[[\"Revenue\",\"trx_date\",\"fiscal year\",\"2023-2024\",false],[\"Revenue\",\"trx_date\",\"fiscal year\",\"2024-2025\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "format": "{}",
+   "label": "Client Sales Person Mapping",
+   "link_to": "Client Sales Person Mapping",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "Report Builder",
+   "format": "{}",
+   "label": "iBeats Data To Import",
+   "link_to": "iBeats Data To Import",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Revenue Summary",
+   "link_to": "revenue-pivot",
+   "type": "Page",
+   "url": "https://erpdev.bksec.com/insights/public/chart/c7feb030ea814d50f74f297bcd01ee8a460cc4a55f449c07a0940e87"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Segmentwise Revenue Summary",
+   "link_to": "MIS Revenue Segmentwise Summary",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Revenue MIS For Review",
+   "link_to": "MIS Revenue With Sales Person for Review",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Revenue Raw For Review",
+   "link_to": "MIS Revenue Raw",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "format": "{}",
+   "label": "iBeats Data MTD",
+   "link_to": "iBeats Data MTD",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "MIS Revenue MTD With Sales Person",
+   "link_to": "MIS Revenue MTD With Sales Person",
+   "type": "Report"
+  }
+ ],
+ "title": "MIS"
+}

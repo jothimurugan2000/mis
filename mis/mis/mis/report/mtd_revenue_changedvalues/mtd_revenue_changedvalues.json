@@ -1,0 +1,64 @@
+{
+ "add_total_row": 0,
+ "columns": [
+  {
+   "fieldname": "VersionName",
+   "fieldtype": "Link",
+   "label": "VersionName",
+   "options": "Version",
+   "width": 0
+  },
+  {
+   "fieldname": "DocName",
+   "fieldtype": "Link",
+   "label": "DocName",
+   "options": "Revenue Raw",
+   "width": 0
+  },
+  {
+   "fieldname": "ref_doctype",
+   "fieldtype": "Data",
+   "label": "Ref DocType",
+   "width": 0
+  },
+  {
+   "fieldname": "creation",
+   "fieldtype": "Datetime",
+   "label": "Creation",
+   "width": 0
+  },
+  {
+   "fieldname": "owner",
+   "fieldtype": "Data",
+   "label": "Owner",
+   "width": 0
+  }
+ ],
+ "creation": "2024-05-28 14:43:22.330151",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "B&K Letter Head",
+ "letterhead": null,
+ "modified": "2024-05-30 12:55:41.695184",
+ "modified_by": "Administrator",
+ "module": "Mis",
+ "name": "Mtd Revenue ChangedValues",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT\r\n    name AS VersionName,\r\n    docname AS DocName,\r\n    ref_doctype,creation,owner\r\n    \r\nFROM tabVersion\r\nWHERE ref_doctype = 'Revenue Raw'\r\nAND docname IN (\r\n    SELECT name\r\n    FROM `tabRevenue Raw`\r\n    WHERE family_code != 'ERR'\r\n    AND trx_date BETWEEN  (\r\n        SELECT MIN(trx_date) \r\n        FROM `tabiBeats Data MTD`\r\n    ) AND (SELECT MAX(trx_date) \r\n        FROM `tabiBeats Data MTD`) \r\n);\r\n",
+ "ref_doctype": "Revenue Raw",
+ "report_name": "Mtd Revenue ChangedValues",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Talend Process"
+  }
+ ]
+}

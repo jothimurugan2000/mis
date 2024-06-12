@@ -1,0 +1,31 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2023-12-16 19:15:33.416351",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{\"filters\":[],\"fields\":[[\"name\",\"iBeats Data To Import\"],[\"trx_date\",\"iBeats Data To Import\"],[\"buy_sell\",\"iBeats Data To Import\"],[\"family_code\",\"iBeats Data To Import\"],[\"bought_qty\",\"iBeats Data To Import\"],[\"account_code\",\"iBeats Data To Import\"],[\"sold_qty\",\"iBeats Data To Import\"],[\"scrip_name\",\"iBeats Data To Import\"],[\"account_name\",\"iBeats Data To Import\"],[\"gross_brokerage\",\"iBeats Data To Import\"],[\"stt_amt\",\"iBeats Data To Import\"],[\"stamp_duty\",\"iBeats Data To Import\"],[\"cgst_amt\",\"iBeats Data To Import\"],[\"net_brokerage_excl_stt_stax_stampduty_trxn_charges\",\"iBeats Data To Import\"],[\"buy_market_rate\",\"iBeats Data To Import\"],[\"bkm_code\",\"iBeats Data To Import\"],[\"sub_account_code\",\"iBeats Data To Import\"],[\"brokerage_percentage\",\"iBeats Data To Import\"],[\"stt_inclusive_amt\",\"iBeats Data To Import\"],[\"stamp_duty_excl\",\"iBeats Data To Import\"],[\"igst_amt\",\"iBeats Data To Import\"],[\"exchange\",\"iBeats Data To Import\"],[\"sell_market_rate\",\"iBeats Data To Import\"],[\"nse_symbol\",\"iBeats Data To Import\"],[\"brokerage_percentage_as_per_slab\",\"iBeats Data To Import\"],[\"trxn_charges\",\"iBeats Data To Import\"],[\"gst_incl_brk_amt\",\"iBeats Data To Import\"],[\"ugst_amt\",\"iBeats Data To Import\"],[\"net_brokerage_mgmt\",\"iBeats Data To Import\"],[\"segment\",\"iBeats Data To Import\"],[\"cp_code\",\"iBeats Data To Import\"],[\"mkt_turnover_amt\",\"iBeats Data To Import\"],[\"default_brokerage_percentage\",\"iBeats Data To Import\"],[\"trxn_charges_excl\",\"iBeats Data To Import\"],[\"sgst_amt\",\"iBeats Data To Import\"],[\"group1\",\"iBeats Data To Import\"],[\"pan_no\",\"iBeats Data To Import\"],[\"mbrok_code\",\"iBeats Data To Import\"],[\"creation\",\"iBeats Data To Import\"],[\"option_type\",\"iBeats Data To Import\"],[\"product_code\",\"iBeats Data To Import\"]],\"order_by\":\"`tabiBeats Data To Import`.`trx_date` desc\",\"add_totals_row\":0,\"page_length\":40,\"column_widths\":{\"name\":120,\"trx_date\":120,\"buy_sell\":120,\"family_code\":120,\"bought_qty\":120,\"account_code\":120,\"sold_qty\":120,\"scrip_name\":120,\"account_name\":120,\"gross_brokerage\":120,\"stt_amt\":120,\"stamp_duty\":120,\"cgst_amt\":120,\"net_brokerage_excl_stt_stax_stampduty_trxn_charges\":120,\"buy_market_rate\":120,\"bkm_code\":120,\"sub_account_code\":120,\"brokerage_percentage\":120,\"stt_inclusive_amt\":120,\"stamp_duty_excl\":120,\"igst_amt\":120,\"exchange\":120,\"sell_market_rate\":120,\"nse_symbol\":120,\"brokerage_percentage_as_per_slab\":120,\"trxn_charges\":120,\"gst_incl_brk_amt\":120,\"ugst_amt\":120,\"net_brokerage_mgmt\":120,\"segment\":120,\"cp_code\":120,\"mkt_turnover_amt\":120,\"default_brokerage_percentage\":120,\"trxn_charges_excl\":120,\"sgst_amt\":120,\"group1\":120,\"pan_no\":120,\"mbrok_code\":120,\"creation\":120,\"option_type\":120,\"product_code\":120},\"group_by\":null}",
+ "letter_head": "B&K Letter Head",
+ "modified": "2023-12-16 19:16:45.474946",
+ "modified_by": "Administrator",
+ "module": "Mis",
+ "name": "Revenue Raw for Review",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "iBeats Data To Import",
+ "report_name": "Revenue Raw for Review",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Talend Process"
+  }
+ ]
+}

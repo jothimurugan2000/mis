@@ -1,0 +1,462 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2024-02-14 14:49:50.077857",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "trx_date",
+  "segment",
+  "exchange",
+  "column_break_ig0rn",
+  "client",
+  "product_code",
+  "buy_sell",
+  "column_break_sp1au",
+  "corporate",
+  "option_type",
+  "cp_code",
+  "column_break_blxyy",
+  "sales_person",
+  "group1",
+  "scrip_details_section",
+  "scrip_name",
+  "column_break_cab69",
+  "corporate_isin_code",
+  "column_break_jyvzr",
+  "corporate_nse_code",
+  "column_break_cdkv5",
+  "corporate_bse_code",
+  "column_break_zoog1",
+  "corporate_bb_code",
+  "client_details_section",
+  "family_code",
+  "column_break_ano92",
+  "account_name",
+  "column_break_zflls",
+  "account_code",
+  "column_break_gmxmo",
+  "sub_account_code",
+  "trade_details_section",
+  "bought_qty",
+  "nse_symbol",
+  "gross_brokerage",
+  "column_break_xobvx",
+  "buy_market_rate",
+  "default_brokerage_percentage",
+  "gst_incl_brk_amt",
+  "column_break_z7rib",
+  "sold_qty",
+  "brokerage_percentage_as_per_slab",
+  "net_brokerage_excl_stt_stax_stampduty_trxn_charges",
+  "column_break_lqghn",
+  "sell_market_rate",
+  "brokerage_percentage",
+  "net_brokerage_mgmt",
+  "section_break_srndg",
+  "stt_amt",
+  "stt_inclusive_amt",
+  "mkt_turnover_amt",
+  "column_break_faahf",
+  "trxn_charges",
+  "trxn_charges_excl",
+  "mbrok_code",
+  "column_break_lx94t",
+  "stamp_duty",
+  "stamp_duty_excl",
+  "bkm_code",
+  "column_break_uekai",
+  "sgst_amt",
+  "igst_amt",
+  "pan_no",
+  "contract_no",
+  "column_break_ymkq4",
+  "cgst_amt",
+  "ugst_amt",
+  "section_break_eixa",
+  "deleted"
+ ],
+ "fields": [
+  {
+   "fieldname": "trx_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Trx Date"
+  },
+  {
+   "fieldname": "segment",
+   "fieldtype": "Data",
+   "label": "Segment",
+   "search_index": 1
+  },
+  {
+   "fieldname": "exchange",
+   "fieldtype": "Data",
+   "label": "Exchange"
+  },
+  {
+   "fieldname": "column_break_ig0rn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "label": "Client",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "product_code",
+   "fieldtype": "Data",
+   "label": "Product Code"
+  },
+  {
+   "fieldname": "buy_sell",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Buy Sell",
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_sp1au",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "corporate",
+   "fieldtype": "Link",
+   "label": "Corporate",
+   "options": "Corporate"
+  },
+  {
+   "fieldname": "option_type",
+   "fieldtype": "Data",
+   "label": "Option Type"
+  },
+  {
+   "fieldname": "cp_code",
+   "fieldtype": "Data",
+   "label": "CP Code"
+  },
+  {
+   "fieldname": "column_break_blxyy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_person",
+   "fieldtype": "Data",
+   "label": "Sales Person"
+  },
+  {
+   "fieldname": "group1",
+   "fieldtype": "Data",
+   "label": "Group1"
+  },
+  {
+   "fieldname": "scrip_details_section",
+   "fieldtype": "Section Break",
+   "label": "Scrip Details"
+  },
+  {
+   "fieldname": "scrip_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Scrip Name"
+  },
+  {
+   "fieldname": "column_break_cab69",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_jyvzr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_cdkv5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_zoog1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "client_details_section",
+   "fieldtype": "Section Break",
+   "label": "Client Details"
+  },
+  {
+   "fieldname": "family_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Family Code",
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_ano92",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "account_name",
+   "fieldtype": "Data",
+   "label": "Account Name"
+  },
+  {
+   "fieldname": "column_break_zflls",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "account_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Account Code"
+  },
+  {
+   "fieldname": "column_break_gmxmo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sub_account_code",
+   "fieldtype": "Data",
+   "label": "Sub Account Code"
+  },
+  {
+   "fieldname": "trade_details_section",
+   "fieldtype": "Section Break",
+   "label": "Trade Details"
+  },
+  {
+   "fieldname": "gross_brokerage",
+   "fieldtype": "Currency",
+   "label": "Gross Brokerage"
+  },
+  {
+   "fieldname": "stt_amt",
+   "fieldtype": "Currency",
+   "label": "STT Amt"
+  },
+  {
+   "fieldname": "stamp_duty",
+   "fieldtype": "Currency",
+   "label": "Stamp Duty"
+  },
+  {
+   "fieldname": "cgst_amt",
+   "fieldtype": "Currency",
+   "label": "CGST Amt"
+  },
+  {
+   "fieldname": "net_brokerage_excl_stt_stax_stampduty_trxn_charges",
+   "fieldtype": "Currency",
+   "label": "Net Brokerage Excl STT Stax Stampduty Trxn Charges"
+  },
+  {
+   "fieldname": "buy_market_rate",
+   "fieldtype": "Float",
+   "label": "Buy Market Rate",
+   "precision": "6"
+  },
+  {
+   "fieldname": "bkm_code",
+   "fieldtype": "Data",
+   "label": "Bkm Code"
+  },
+  {
+   "fieldname": "column_break_faahf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bought_qty",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Bought Qty"
+  },
+  {
+   "fieldname": "brokerage_percentage",
+   "fieldtype": "Float",
+   "label": "Brokerage Percentage",
+   "precision": "4"
+  },
+  {
+   "fieldname": "stt_inclusive_amt",
+   "fieldtype": "Currency",
+   "label": "STT Inclusive Amt"
+  },
+  {
+   "fieldname": "stamp_duty_excl",
+   "fieldtype": "Currency",
+   "label": "Stamp Duty Excl"
+  },
+  {
+   "fieldname": "igst_amt",
+   "fieldtype": "Currency",
+   "label": "IGST Amt"
+  },
+  {
+   "fieldname": "sell_market_rate",
+   "fieldtype": "Float",
+   "label": "Sell Market Rate",
+   "precision": "6"
+  },
+  {
+   "fieldname": "column_break_lx94t",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nse_symbol",
+   "fieldtype": "Data",
+   "label": "NSE Symbol",
+   "search_index": 1
+  },
+  {
+   "fieldname": "sold_qty",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Sold Qty"
+  },
+  {
+   "fieldname": "brokerage_percentage_as_per_slab",
+   "fieldtype": "Currency",
+   "label": "Brokerage Percentage as Per Slab"
+  },
+  {
+   "fieldname": "trxn_charges",
+   "fieldtype": "Currency",
+   "label": "Trxn Charges"
+  },
+  {
+   "fieldname": "gst_incl_brk_amt",
+   "fieldtype": "Currency",
+   "label": "GST Incl Brk Amt"
+  },
+  {
+   "fieldname": "ugst_amt",
+   "fieldtype": "Currency",
+   "label": "UGST Amt"
+  },
+  {
+   "fieldname": "net_brokerage_mgmt",
+   "fieldtype": "Currency",
+   "label": "Net Brokerage MGMT"
+  },
+  {
+   "fieldname": "column_break_uekai",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mkt_turnover_amt",
+   "fieldtype": "Currency",
+   "label": "Mkt Turnover Amt"
+  },
+  {
+   "fieldname": "default_brokerage_percentage",
+   "fieldtype": "Float",
+   "label": "Default Brokerage Percentage",
+   "precision": "4"
+  },
+  {
+   "fieldname": "trxn_charges_excl",
+   "fieldtype": "Currency",
+   "label": "Trxn Charges Excl"
+  },
+  {
+   "fieldname": "sgst_amt",
+   "fieldtype": "Currency",
+   "label": "SGST Amt"
+  },
+  {
+   "fieldname": "pan_no",
+   "fieldtype": "Data",
+   "label": "PAN No"
+  },
+  {
+   "fieldname": "mbrok_code",
+   "fieldtype": "Data",
+   "label": "MBrok Code"
+  },
+  {
+   "fieldname": "column_break_xobvx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_z7rib",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_lqghn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_srndg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_ymkq4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "corporate.isin_code",
+   "fieldname": "corporate_isin_code",
+   "fieldtype": "Data",
+   "label": "ISIN Code"
+  },
+  {
+   "fetch_from": "corporate.nse_code",
+   "fieldname": "corporate_nse_code",
+   "fieldtype": "Data",
+   "label": "NSE Code"
+  },
+  {
+   "fetch_from": "corporate.bse_code",
+   "fieldname": "corporate_bse_code",
+   "fieldtype": "Data",
+   "label": "BSE Code"
+  },
+  {
+   "fetch_from": "corporate.bb_code",
+   "fieldname": "corporate_bb_code",
+   "fieldtype": "Data",
+   "label": "BB Code"
+  },
+  {
+   "fieldname": "section_break_eixa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "deleted",
+   "fieldtype": "Check",
+   "label": "Deleted"
+  },
+  {
+   "fieldname": "contract_no",
+   "fieldtype": "Data",
+   "label": "Contract No"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-27 14:27:29.983884",
+ "modified_by": "Administrator",
+ "module": "Mis",
+ "name": "Revenue",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "trx_date",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
